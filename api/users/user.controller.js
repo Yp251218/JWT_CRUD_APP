@@ -30,6 +30,7 @@ module.exports = {
   },
   login: (req, res) => {
     const body = req.body;
+    console.log(req.body);
     getUserByUserEmail(body.email, (err, results) => {
       if (err) {
         console.log(err);
@@ -40,8 +41,9 @@ module.exports = {
           data: "Invalid email or password"
         });
       }
-      const result = compareSync(body.password, results.password);
-      if (result) {
+      console.log(body.password,results.password);
+      // const result = compareSync(body.password, results.password);
+      if (body.password == results.password) {
         results.password = undefined;
         const jsontoken = sign({ result: results }, "qwe1234", {
           expiresIn: "1h"

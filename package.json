@@ -1,21 +1,24 @@
 {
-  "name": "2019-10-12",
+  "name": "rest_api_with_mysql",
   "version": "1.0.0",
-  "description": "",
+  "description": "- 👋 Hi, I’m @Tariqu\r - 👀 I’m looking for contributor",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^3.0.6",
-    "dotenv": "^8.1.0",
-    "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
-    "mysql": "^2.17.1"
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1"
   },
   "devDependencies": {
-    "nodemon": "^1.19.3"
+    "nodemon": "^3.0.3"
   }
 }
